@@ -85,7 +85,6 @@ X4extra.SS = SSE.before - SSE.afterX4
 X4extra.SS
 X4partial.R2 = (SSE.before - SSE.afterX4)/(SSE.before)
 X4partial.R2
-
 model.before = lm(V8 ~ V5+V16, data=CDI)
 model.afterX5 = lm(V8 ~ V5+V16+V9, data=CDI)
 SSE.before = sum(model.before$residuals^2)
